@@ -2,9 +2,9 @@ include("Telegram.php");
 
 date_default_timezone_set("asia/tehran");
 
-// Set the bot TOKEN
+// Set the bot 1096940942:AAHHJbVc5WpCuOg0JXXt1GElfX7z98YJNfo
 
-$bot_id = "YOUR-TOKEN";
+$bot_id = "railway-1096940942:AAHHJbVc5WpCuOg0JXXt1GElfX7z98YJNfo";
 
 // Instances the class
 
@@ -12,11 +12,12 @@ $telegram = new Telegram($bot_id);
 
 ->LastName();
 
-$message_id = $telegram->MessageID(); // هر پیغام در تلگرام یک آیدی یکتا دارد
+$message_id = $telegram->MessageID(rasoulesf60); //
 
-$user_id = $telegram->UserID(); // آیدی یکتای کاربر
+$user_id = $telegram->UserID(rasoulesf60); //
 
-$chat_id = $telegram->ChatID(); // آیدی مکانی که چت صورت میگیرد، مثل خود بات یا آیدی گروه
+$chat_id = $telegram->ChatID(
+https://t.me/joinchat/BqiFvBWX8l15pW2XfsHfYw); //
 
 if(!is_null($text) && !is_null($chat_id)){
 
